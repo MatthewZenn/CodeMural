@@ -1,0 +1,14 @@
+body,html {
+    background-color: rgb(26, 26, 26)
+}
+
+#canvas1 {
+    border: 1px solid rgb(50, 50, 50);
+}
+
+#canvas2 {
+    border: 1px solid rgb(50, 50, 50);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
