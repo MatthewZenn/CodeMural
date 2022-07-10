@@ -14,10 +14,12 @@
            <img src="Assets/Logo_Small.png" alt=""> 
         </header>
         <input type="file" hidden="hidden" id="picture" accept="image/*">
-        <img id="image" src="" width="200" height="200" alt="">
-        <canvas id="canvas1" width="200" height="200"></canvas>
+        <img id="image" src="" width="200" height="200" alt="" hidden>
+        <div>
+            <canvas id="canvas1" width="200" height="200"></canvas>
+            <button type="button" class="open" id="open"><i class="fa fa-folder-open"></i> Open Image</button>
+        </div>
         <canvas id="canvas2" width="800" height="800"></canvas>
-        <button type="button" class="open" id="open"><i class="fa fa-folder-open"></i> Open Image</button>
         <script src="main.js" async defer></script>
     </body>
 </html>
