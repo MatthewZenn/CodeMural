@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SandTable</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="Assets/Logo.png">
+            <button id="save">&#xE74E;</button>
+            <button id="run">&#xE768;</button>
+            <span class="exit" onclick="window.close()">&#xE711;</span>
+            <span class="min" id="min">&#xE738;</span>
+        </header>
+        <canvas id="canvas" width="1015" height="1000"></canvas>
+        <textarea id="editor" spellcheck="false"></textarea>
+        <script src="logic.js" async defer></script>
+    </body>
+</html>
