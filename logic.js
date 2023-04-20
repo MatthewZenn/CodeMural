@@ -4,7 +4,7 @@ var ctx = canvas.getContext('2d');
 var x = 0;
 
 document.getElementById("run").addEventListener('click', function() {
-    ctx.clearRect(0, 0, canvas.height*2, canvas.width*2);
+    ctx.clearRect(0, 0, canvas.width*2, canvas.height*2);
     eval(document.getElementById("editor").value);
 })
 

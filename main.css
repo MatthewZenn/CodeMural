@@ -91,7 +91,7 @@ header {
     overflow-y: scroll;
     outline: none;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     resize: none;
     padding-left: 5px;
     padding-top: 10px;
