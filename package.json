@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/MatthewZenn/SandTable.js#readme",
   "dependencies": {
-    "electron": "^24.1.2"
+    "electron": "^24.1.3"
   }
 }

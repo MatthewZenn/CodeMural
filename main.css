@@ -117,7 +117,7 @@ header {
     height: 30px;
     width: 40px;
     font-family: SegoeIcons;
-    font-size: 16pt;
+    font-size: 12pt;
     border-left: 1px solid rgb(48, 48, 48);
 }
 
@@ -137,9 +137,9 @@ header {
     margin: none;
     border: none;
     height: 30px;
-    width: 40px;
+    width: 30px;
     font-family: SegoeIcons;
-    font-size: 16pt;
+    font-size: 12pt;
 }
 
 #run:hover {
@@ -157,14 +157,34 @@ header {
     transform: translate(-50%, -50%);
     margin: none;
     border: none;
-    border-left: 1px solid rgb(48, 48, 48);
     height: 30px;
-    width: 40px;
+    width: 30px;
     font-family: SegoeIcons;
-    font-size: 16pt;
+    font-size: 12pt;
 }
 
 #edit:hover {
+    color: #DF77FF;
+    cursor: pointer;
+}
+
+#capture {
+    -webkit-app-region: no-drag;
+    background-color: transparent;
+    color: grey;
+    position: relative;
+    left: 1%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+    margin: none;
+    border: none;
+    height: 30px;
+    width: 30px;
+    font-family: SegoeIcons;
+    font-size: 12pt;
+}
+
+#capture:hover {
     color: #DF77FF;
     cursor: pointer;
 }
