@@ -1,5 +1,5 @@
 canvas.style.backgroundColor = "black";
-ctx.fillStyle = "white";
+ctx.fillStyle = "#DF77FF";
 
 ctx.clearRect(0, 0, canvas.height, canvas.width);
 
