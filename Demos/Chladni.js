@@ -1,0 +1,1 @@
+Math.sin(m * Math.PI * x) * Math.sin(m * Math.PI * y) - Math.sin(n * Math.PI * x) * Math.sin(n * Math.PI * y)==0.5;
