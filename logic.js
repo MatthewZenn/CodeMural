@@ -2,6 +2,14 @@ const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext('2d');
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
+console.log = function(message) {
+    alert(message);
+};
+
+document.getElementById("logo").addEventListener('click', () => {
+    window.location.reload();
+});
+
 var x = 0;
 
 document.getElementById("run").addEventListener('click', function() {
