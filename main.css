@@ -1,5 +1,5 @@
 html, body {
-    background-color: #171717;
+    background-color: #141414;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url(Assets/backImage.png);
     background-repeat: no-repeat;
@@ -19,10 +19,15 @@ html, body {
     src:url("Assets/Segoe Fluent Icons.ttf");
 }
 
+@font-face {
+  font-family: Consolas;
+  src:url("Assets/consola.ttf");
+}
+
 header {
     -webkit-app-region: drag;
     height: 35px;
-    background-color: #1d1d1d;
+    background-color: #111111;
 }
 
 .exit {
@@ -59,7 +64,7 @@ header {
 
 .min:hover {
     cursor: pointer;
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(32, 32, 32);
 }
 
 .logo {
@@ -87,8 +92,8 @@ header {
     right: 0px;
     height: 96%;
     width: 50%;
-    background-color: #1d1d1d;
-    color: grey;
+    background-color: #111111;
+    color: rgb(180, 180, 180);
     font-size: 14pt;
     overflow-y: scroll;
     outline: none;
@@ -98,6 +103,7 @@ header {
     padding-top: 10px;
     display: block;
     z-index: -1;
+    font-family: Consolas, 'Courier New', Courier, monospace;
 }
 
 #editor::selection {
@@ -105,12 +111,34 @@ header {
     color: white;
 }
 
+#open {
+  -webkit-app-region: no-drag;
+  background-color: transparent;
+  color: grey;
+  position: relative;
+  left: 1.5%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: none;
+  border: none;
+  height: 30px;
+  width: 40px;
+  font-family: SegoeIcons;
+  font-size: 12pt;
+  border-left: 1px solid rgb(48, 48, 48);
+}
+
+#open:hover {
+  color: #DF77FF;
+  cursor: pointer;
+}
+
 #save {
     -webkit-app-region: no-drag;
     background-color: transparent;
     color: grey;
     position: relative;
-    left: 1.5%;
+    left: 1%;
     top: 50%;
     transform: translate(-50%, -50%);
     margin: none;
@@ -119,7 +147,7 @@ header {
     width: 40px;
     font-family: SegoeIcons;
     font-size: 12pt;
-    border-left: 1px solid rgb(48, 48, 48);
+    border-right: 1px solid rgb(48, 48, 48);
 }
 
 #save:hover {
@@ -201,4 +229,15 @@ header {
 #editor::-webkit-scrollbar-thumb {
   background-color: #DF77FF;
   outline: none
+}
+
+#filename {
+  position: absolute;
+  left: 50%;
+  top: 1%;
+  transform: translate(-50%, -15%);
+  text-align: center;
+  color: white;
+  font-size: 12pt;
+  font-family: Arial, sans-serif;
 }
