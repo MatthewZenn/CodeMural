@@ -1,8 +1,19 @@
-const canvas = document.getElementById("canvas");
-const ctx = canvas.getContext('2d');
+var canvas = 0;
+var ctx = 0;
 const realButton = document.getElementById("picture");
 const image = document.getElementById('image');
 const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+function createCanvas(xs, ys) {
+  canvas = document.createElement('canvas');
+  ctx = canvas.getContext('2d')
+
+  canvas.id = "canvas";
+  canvas.width = xs;
+  canvas.height = ys;
+
+  document.getElementById('canvasarea').appendChild(canvas);
+}
 
 console.log = function(message) {
   alert(message);
@@ -43,14 +54,12 @@ document.getElementById("run").addEventListener('click', function() {
 
 document.getElementById("edit").addEventListener('click', function() {
     if (x == 0) {
-        document.getElementById("editor").style.display = "none";
-        document.getElementById("toolbar").style.display = "none";
+        document.getElementById("editor").style.display = "block";
         document.getElementById("edit").innerHTML = "&#xE70F;"
         x = 1;
     }
     else {
-        document.getElementById("editor").style.display = "block";
-        document.getElementById("toolbar").style.display = "block";
+        document.getElementById("editor").style.display = "none";
         document.getElementById("edit").innerHTML = "&#xE890;"
         x = 0;
     }
@@ -85,13 +94,16 @@ realButton.addEventListener("change", function() {
 });
 
 image.addEventListener('load', e => {
+  createCanvas(image.width, image.height);
+  document.getElementById('xcor').value = image.width;
+  document.getElementById('ycor').value = image.height;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.drawImage(image, 0, 0, 1920, 1080);
+  ctx.drawImage(image, 0, 0, image.width, image.height);
 });
 
 document.getElementById("new").addEventListener('click', function() {
-  ctx.clearRect(0, 0, canvas.width*4, canvas.height*4);
-  canvas.style.backgroundColor = "transparent";
+  var xsize = document.getElementById('xcor').value;
+  var ysize = document.getElementById('ycor').value;
   document.getElementById("editor").value = "";
+  createCanvas(xsize, ysize);
 });
-

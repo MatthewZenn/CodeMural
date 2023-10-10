@@ -5,7 +5,7 @@ html, body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-y: 50%;
-    background-position-x: 15%;
+    background-position-x: 50%;
 }
 
 * {
@@ -28,6 +28,7 @@ header {
     -webkit-app-region: drag;
     height: 35px;
     background-color: #0f0f0f;
+    border-bottom: 1px solid rgb(26, 26, 26);
 }
 
 .exit {
@@ -78,30 +79,42 @@ header {
     cursor: pointer;
 }
 
+#canvasarea {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: -50;
+}
+
 #canvas {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     z-index: -99;
-    background-color: transparent;
+    background-color: white;
 }
 
 #editor {
     position: absolute;
     bottom: 0px;
-    right: 0px;
+    left: 80px;
     height: 96%;
-    width: 50%;
+    width: 100%;
     background-color: #0f0f0f;
     color: rgb(180, 180, 180);
     font-size: 14pt;
     overflow-y: scroll;
     outline: none;
     border: none;
+    border-left: 1px solid rgb(26, 26, 26);
     resize: none;
     padding-left: 5px;
     padding-top: 10px;
-    display: block;
+    display: none;
     z-index: -1;
     font-family: Consolas, 'Courier New', Courier, monospace;
 }
@@ -246,14 +259,11 @@ header {
   position: absolute;
   display: block;
   width: 80px;
-  height: 600px;
-  top: 50%;
-  left: 20px;
-  transform: translate(0%, -50%);
+  height: 96%;
+  top: 35px;
+  left: 0px;
   background-color: #0f0f0f;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
-  border: 1px solid rgb(26, 26, 26);
+  border-right: 1px solid rgb(26, 26, 26);
 }
 
 .button {
@@ -278,6 +288,7 @@ header {
   background-color: #0f0f0f;
   bottom: 0px;
   width: 100%;
+  border-top: 1px solid rgb(26, 26, 26);
 }
 
 #status {
@@ -311,14 +322,13 @@ header {
 }
 
 #log {
-  width: 600px;
-  height: 400px;
+  width: 100%;
+  height: 230px;
   position: fixed;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 0;
+  transform: translate(-50%, 0);
   background: #0f0f0f;
-  border-radius: 10px;
   display: none;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
   border: 1px solid rgb(26, 26, 26);
@@ -326,12 +336,12 @@ header {
 
 #logger {
   resize: none;
-  width: 580px;
-  height: 350px;
+  width: 98%;
+  height: 210px;
   position: fixed;
   left: 50%;
-  bottom: 10px;
-  transform: translate(-50%, 0%);
+  top: 50%;
+  transform: translate(-50%, -50%);
   background: transparent;
   outline: none;
   color: rgb(255, 90, 90);
@@ -340,13 +350,32 @@ header {
   border: none;
 }
 
-.winbar {
-  width: 600px;
-  background-color: #141414;
-  border-bottom: 1px solid rgb(26, 26, 26);
+#xcor {
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  padding-top: 10px;
-  height: 30px;
+  font-family: Consolas, 'Courier New', Courier, monospace;
+  position: relative;
+  left: 10px;
+  top: 50%;
+  width: 80px;
+  height: 20px;
+  transform: translate(0%, -50%);
+  background-color: #0f0f0f;
+  border: 1px solid rgb(26, 26, 26);
+  border-radius: 5px;
+  outline: none;
+}
+
+#ycor {
+  color: white;
+  font-family: Consolas, 'Courier New', Courier, monospace;
+  position: relative;
+  left: 10px;
+  top: 50%;
+  width: 80px;
+  height: 20px;
+  transform: translate(0%, -50%);
+  background-color: #0f0f0f;
+  border: 1px solid rgb(26, 26, 26);
+  border-radius: 5px;
+  outline: none;
 }

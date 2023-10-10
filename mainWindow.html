@@ -21,8 +21,8 @@
             <span class="min" id="min">&#xE738;</span>
         </header>
         <input type="file" id="picture" accept="image/*" hidden>
-        <img id="image" src="" width="1920" height="1080" alt="" hidden>
-        <canvas id="canvas" width="1920" height="1080"></canvas>
+        <img id="image" src="" alt="" hidden>
+        <div id="canvasarea"></div>
         <textarea id="editor" spellcheck="false"></textarea>
         <div id="toolbar">
           <button class="button" id="new"><img src="Assets/new.png"></button>
@@ -33,13 +33,19 @@
           <button class="button" id=""></button>
           <button class="button" id=""></button>
           <button class="button" id=""></button>
+          <button class="button" id=""></button>
+          <button class="button" id=""></button>
+          <button class="button" id=""></button>
+          <button class="button" id=""></button>
+          <button class="button" id=""></button>
         </div>
         <div id="log">
-          <div class="winbar">Error Log</div>
           <textarea name="errorlog" id="logger" cols="30" rows="10" readonly="true" contenteditable="false"></textarea>
         </div>
         <footer id="footer">
           <button id="error"><span id="status"></span> 0 Errors</button>
+          <input type="text" id="xcor" placeholder="Width" value="1920">
+          <input type="text" id="ycor" placeholder="Height" value="1080">
         </footer>
         <script src="logic.js" async defer></script>
     </body>
