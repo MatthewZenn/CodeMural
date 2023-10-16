@@ -25,6 +25,7 @@ document.getElementById("logo").addEventListener('click', () => {
 
 var x = 0;
 var y = 0;
+var z = 0;
 var errs = [];
 
 document.getElementById("run").addEventListener('click', function() {
@@ -66,7 +67,7 @@ document.getElementById("edit").addEventListener('click', function() {
         document.getElementById("edit").style.backgroundColor = "transparent";
         document.getElementById("edit").style.color = "grey";
         document.getElementById("filename").style.color = "grey";
-        document.getElementById("header").style.borderBottom = "1px solid rgb(26, 26, 26)";
+        document.getElementById("header").style.borderBottom = "1px solid rgb(50, 50, 50)";
         x = 0;
     }
 });
@@ -79,6 +80,17 @@ document.getElementById("error").addEventListener('click', function() {
   else {
     document.getElementById("log").style.display = "none"
     y = 0;
+  }
+});
+
+document.getElementById("quick-scripts").addEventListener('click', function() {
+  if (z == 0) {
+    document.getElementById("scpmenu").style.display = "block"
+    z = 1;
+  }
+  else {
+    document.getElementById("scpmenu").style.display = "none"
+    z = 0;
   }
 });
 

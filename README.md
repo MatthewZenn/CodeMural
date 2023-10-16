@@ -8,7 +8,8 @@ CodeMural is a JavaScript-based canvas art program. Use the built-in text editor
 
 **Version-0.3**
 - Rebranded to CodeMural. This decision better reflect the intended use of the tool as a generative art program.
-- canvas has been made to be dynamic. define a size in the status bar and create a new canvas, or import an image as a canvas of the source size.
+- canvas has been made to be dynamic. Define a size in the status bar and create a new canvas, or import an image as a canvas of the source size.
+- Implemented Scripts menu for importing functions and using tools.
 
 **TODO**
 - Saving Code
