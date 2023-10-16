@@ -54,13 +54,19 @@ document.getElementById("run").addEventListener('click', function() {
 
 document.getElementById("edit").addEventListener('click', function() {
     if (x == 0) {
-        document.getElementById("editor").style.display = "block";
-        document.getElementById("edit").innerHTML = "&#xE70F;"
+        document.getElementById("textcontainer").style.display = "block";
+        document.getElementById("edit").style.backgroundColor = "rgb(0, 200, 211)";
+        document.getElementById("edit").style.color = "white";
+        document.getElementById("filename").style.color = "white";
+        document.getElementById("header").style.borderBottom = "1px solid rgb(0, 200, 211)";
         x = 1;
     }
     else {
-        document.getElementById("editor").style.display = "none";
-        document.getElementById("edit").innerHTML = "&#xE890;"
+        document.getElementById("textcontainer").style.display = "none";
+        document.getElementById("edit").style.backgroundColor = "transparent";
+        document.getElementById("edit").style.color = "grey";
+        document.getElementById("filename").style.color = "grey";
+        document.getElementById("header").style.borderBottom = "1px solid rgb(26, 26, 26)";
         x = 0;
     }
 });
@@ -106,4 +112,24 @@ document.getElementById("new").addEventListener('click', function() {
   var ysize = document.getElementById('ycor').value;
   document.getElementById("editor").value = "";
   createCanvas(xsize, ysize);
+});
+
+const textarea = document.getElementById('editor');
+const numbers = document.getElementById("numbers");
+
+textarea.addEventListener("keyup", (e) => {
+  const num = e.target.value.split("\n").length;
+  numbers.innerHTML = Array(num).fill("<span></span>").join("");
+  
+});
+textarea.addEventListener("keydown", (event) => {
+  if (event.key === "Tab") {
+    const start = textarea.selectionStart;
+    const end = textarea.selectionEnd;
+    textarea.value =
+      textarea.value.substring(0, start) +
+      "\t" +
+      textarea.value.substring(end);
+    event.preventDefault();
+  }
 });

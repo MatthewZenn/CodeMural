@@ -25,58 +25,57 @@ html, body {
 }
 
 header {
-    -webkit-app-region: drag;
-    height: 35px;
-    background-color: #0f0f0f;
-    border-bottom: 1px solid rgb(26, 26, 26);
+  -webkit-app-region: drag;
+  height: 35px;
+  background-color: #0f0f0f;
+  border-bottom: 1px solid rgb(26, 26, 26);
 }
 
 .exit {
-    -webkit-app-region: no-drag;
-    color: 	white;
-    position: relative;
-    float: right;
-    font-size: 12pt;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    font-family: SegoeIcons;
+  -webkit-app-region: no-drag;
+  color: 	white;
+  position: relative;
+  float: right;
+  font-size: 12pt;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  font-family: SegoeIcons;
 }
 
 .exit:hover {
-    cursor: pointer;
-    background-color: #ff0000;
-    color: white;
+  cursor: pointer;
+  background-color: #ff0000;
+  color: white;
 }
 
 .min {
-    -webkit-app-region: no-drag;
-    color: 	white;
-    position: relative;
-    float: right;
-    font-size: 12pt;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    font-family: SegoeIcons;
+  -webkit-app-region: no-drag;
+  color: 	white;
+  position: relative;
+  float: right;
+  font-size: 12pt;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  font-family: SegoeIcons;
 }
 
 .min:hover {
-    cursor: pointer;
-    background-color: rgb(32, 32, 32);
+  cursor: pointer;
+  background-color: rgb(32, 32, 32);
 }
 
-.logo {
-    position: relative;
-    height: 30px;
-    float: left;
-    margin-left: 10px;
-    margin-top: 2px;
-    filter: brightness(100%);
-    z-index: 9999;
-    cursor: pointer;
+#logo {
+  position: relative;
+  height: 26px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+  z-index: 999;
 }
 
 #canvasarea {
@@ -90,38 +89,18 @@ header {
 }
 
 #canvas {
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -99;
-    background-color: white;
-}
-
-#editor {
-    position: absolute;
-    bottom: 0px;
-    left: 80px;
-    height: 96%;
-    width: 100%;
-    background-color: #0f0f0f;
-    color: rgb(180, 180, 180);
-    font-size: 14pt;
-    overflow-y: scroll;
-    outline: none;
-    border: none;
-    border-left: 1px solid rgb(26, 26, 26);
-    resize: none;
-    padding-left: 5px;
-    padding-top: 10px;
-    display: none;
-    z-index: -1;
-    font-family: Consolas, 'Courier New', Courier, monospace;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -99;
+  background-color: white;
 }
 
 #editor::selection {
-    background-color: #DF77FF;
-    color: white;
+  background-color: rgba(0, 153, 255, 0.33);
+  color: white;
+  border-radius: 5px;
 }
 
 #open {
@@ -142,123 +121,123 @@ header {
 }
 
 #open:hover {
-  color: #DF77FF;
+  color: rgb(0, 200, 211);
   cursor: pointer;
 }
 
 #save {
-    -webkit-app-region: no-drag;
-    background-color: transparent;
-    color: grey;
-    position: relative;
-    left: 1%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    margin: none;
-    border: none;
-    height: 30px;
-    width: 40px;
-    font-family: SegoeIcons;
-    font-size: 12pt;
-    border-right: 1px solid rgb(48, 48, 48);
+  -webkit-app-region: no-drag;
+  background-color: transparent;
+  color: grey;
+  position: relative;
+  left: 1%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: none;
+  border: none;
+  height: 30px;
+  width: 40px;
+  font-family: SegoeIcons;
+  font-size: 12pt;
+  border-right: 1px solid rgb(48, 48, 48);
 }
 
 #save:hover {
-    color: #DF77FF;
-    cursor: pointer;
+  color: rgb(0, 200, 211);
+  cursor: pointer;
 }
 
 #run {
-    -webkit-app-region: no-drag;
-    background-color: transparent;
-    color: grey;
-    position: relative;
-    left: 1%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    margin: none;
-    border: none;
-    height: 30px;
-    width: 30px;
-    font-family: SegoeIcons;
-    font-size: 12pt;
+  -webkit-app-region: no-drag;
+  background-color: transparent;
+  color: grey;
+  position: relative;
+  left: 1%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: none;
+  border: none;
+  height: 30px;
+  width: 30px;
+  font-family: SegoeIcons;
+  font-size: 12pt;
 }
 
 #run:hover {
-    color: #DF77FF;
-    cursor: pointer;
+  color: rgb(0, 200, 211);
+  cursor: pointer;
 }
 
 #edit {
-    -webkit-app-region: no-drag;
-    background-color: transparent;
-    color: grey;
-    position: relative;
-    left: 1%;
-    top: 48%;
-    transform: translate(-50%, -50%);
-    margin: none;
-    border: none;
-    height: 30px;
-    width: 30px;
-    font-family: SegoeIcons;
-    font-size: 12pt;
-}
-
-#edit:hover {
-    color: #DF77FF;
-    cursor: pointer;
-}
-
-#capture {
-    -webkit-app-region: no-drag;
-    background-color: transparent;
-    color: grey;
-    position: relative;
-    left: 1%;
-    top: 48%;
-    transform: translate(-50%, -50%);
-    margin: none;
-    border: none;
-    height: 30px;
-    width: 30px;
-    font-family: SegoeIcons;
-    font-size: 12pt;
-}
-
-#capture:hover {
-    color: #DF77FF;
-    cursor: pointer;
-}
-
-#editor::-webkit-scrollbar {
-    width: 2px;
-}
- 
-#editor::-webkit-scrollbar-track {
+  -webkit-app-region: no-drag;
   background-color: transparent;
-}
- 
-#editor::-webkit-scrollbar-thumb {
-  background-color: #DF77FF;
-  outline: none
+  color: grey;
+  position: relative;
+  left: 3%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: none;
+  border: none;
+  border-radius: 5px 5px 0px 0px;
+  height: 35px;
+  font-family: SegoeIcons;
+  font-size: 12pt;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #filename {
-  position: absolute;
-  left: 50%;
-  top: 1%;
-  transform: translate(-50%, -15%);
-  text-align: center;
-  color: white;
+  position: relative;
+  left: 4px;
+  color: grey;
   font-size: 12pt;
   font-family: Arial, sans-serif;
+  display: inline;
+}
+
+#edit:hover {
+  cursor: pointer;
+}
+
+#capture {
+  -webkit-app-region: no-drag;
+  background-color: transparent;
+  color: grey;
+  position: relative;
+  left: 1%;
+  top: 48%;
+  transform: translate(-50%, -50%);
+  margin: none;
+  border: none;
+  height: 30px;
+  width: 30px;
+  font-family: SegoeIcons;
+  font-size: 12pt;
+}
+
+#capture:hover {
+  color: rgb(0, 200, 211);
+  cursor: pointer;
+}
+
+#textcontainer::-webkit-scrollbar {
+  width: 20px;
+  display: none;
+}
+ 
+#textcontainer::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+ 
+#textcontainer::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.25);
+  outline: none
 }
 
 #toolbar {
   position: absolute;
   display: block;
-  width: 80px;
+  width: 70px;
   height: 96%;
   top: 35px;
   left: 0px;
@@ -273,7 +252,7 @@ header {
   position: relative;
   border-radius: 5px;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 5px;
   border: none;
 }
 
@@ -325,12 +304,10 @@ header {
   width: 100%;
   height: 230px;
   position: fixed;
-  left: 50%;
+  left: 70px;
   bottom: 0;
-  transform: translate(-50%, 0);
   background: #0f0f0f;
   display: none;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
   border: 1px solid rgb(26, 26, 26);
 }
 
@@ -338,10 +315,9 @@ header {
   resize: none;
   width: 98%;
   height: 210px;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  left: 10px;
+  top: 10px;
   background: transparent;
   outline: none;
   color: rgb(255, 90, 90);
@@ -356,13 +332,14 @@ header {
   position: relative;
   left: 10px;
   top: 50%;
-  width: 80px;
-  height: 20px;
+  width: 50px;
+  height: 25px;
   transform: translate(0%, -50%);
-  background-color: #0f0f0f;
-  border: 1px solid rgb(26, 26, 26);
+  background-color: #141414;
+  border: none;
   border-radius: 5px;
   outline: none;
+  text-align: center;
 }
 
 #ycor {
@@ -371,11 +348,65 @@ header {
   position: relative;
   left: 10px;
   top: 50%;
-  width: 80px;
-  height: 20px;
+  width: 50px;
+  height: 25px;
   transform: translate(0%, -50%);
-  background-color: #0f0f0f;
-  border: 1px solid rgb(26, 26, 26);
+  background-color: #141414;
+  border: none;
   border-radius: 5px;
   outline: none;
+  text-align: center;
+}
+
+#textcontainer {
+  position: absolute;
+  bottom: 0px;
+  left: 70px;
+  height: 97%;
+  width: 97%;
+  display: none;
+  font-family: Consolas, "Courier New", Courier, monospace;
+  background-color: #0f0f0f;
+  z-index: -1;
+  border-left: 1px solid rgb(26, 26, 26);
+  overflow-y: scroll;
+}
+
+#editor {
+  position: absolute;
+  top: 0px;
+  left: 65px;
+  height: 100%;
+  width: 96%;
+  background-color: #0f0f0f;
+  color: rgb(180, 180, 180);
+  font-size: 14pt;
+  outline: none;
+  border: none;
+  resize: none;
+  padding-left: 5px;
+  padding-top: 10px;
+  display: block;
+  font-family: Consolas, 'Courier New', Courier, monospace;
+}
+
+#numbers {
+  position: absolute;
+  width: 20px;
+  left: 10px;
+  top: 0;
+  font-size: 14pt;
+  padding-top: 10px;
+  text-align: right;
+  font-family: Consolas, 'Courier New', Courier, monospace;
+}
+
+#numbers span {
+  counter-increment: linenumber;
+}
+
+#numbers span::before {
+  content: counter(linenumber);
+  display: block;
+  color: #505050;
 }

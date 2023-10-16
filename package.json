@@ -1,5 +1,5 @@
 {
-  "name": "sandtable",
+  "name": "codemural",
   "version": "1.0.0",
   "description": "HTML-based Generative Art Program",
   "main": "main.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MatthewZenn/SandTable.js.git"
+    "url": "git+https://github.com/MatthewZenn/CodeMural.git"
   },
   "author": "Matthew Zenn",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MatthewZenn/SandTable.js/issues"
+    "url": "https://github.com/MatthewZenn/CodeMural/issues"
   },
-  "homepage": "https://github.com/MatthewZenn/SandTable.js#readme",
+  "homepage": "https://github.com/MatthewZenn/CodeMural#readme",
   "dependencies": {
     "electron": "^24.1.3"
   }

@@ -3,39 +3,35 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>SandTable</title>
+        <title>CodeMural</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <header>
+        <header id="header">
             <img class="logo" id="logo" src="Assets/Logo.png">
             <button id="open">&#xE838;</button>
             <button id="save">&#xE74E;</button>
             <button id="run">&#xE768;</button>
             <button id="capture">&#xEE71;</button>
-            <button id="edit">&#xE890;</button>
-            <p id="filename">Untitled.js</p>
+            <button id="edit">&#xE70F; <p id="filename">Untitled.js</p></button>
             <span class="exit" onclick="window.close()">&#xE711;</span>
             <span class="min" id="min">&#xE738;</span>
         </header>
         <input type="file" id="picture" accept="image/*" hidden>
         <img id="image" src="" alt="" hidden>
         <div id="canvasarea"></div>
-        <textarea id="editor" spellcheck="false"></textarea>
+        <div id="textcontainer">
+          <div id="numbers">
+            <span></span>
+          </div>
+          <textarea id="editor" spellcheck="false"></textarea>
+        </div>
         <div id="toolbar">
           <button class="button" id="new"><img src="Assets/new.png"></button>
           <button class="button" id="place"><img src="Assets/place_image.png"></button>
           <button class="button" id="quick-scripts"><img src="Assets/scripts.png"></button>
-          <button class="button" id=""></button>
-          <button class="button" id=""></button>
-          <button class="button" id=""></button>
-          <button class="button" id=""></button>
-          <button class="button" id=""></button>
-          <button class="button" id=""></button>
-          <button class="button" id=""></button>
-          <button class="button" id=""></button>
           <button class="button" id=""></button>
           <button class="button" id=""></button>
         </div>
@@ -44,8 +40,8 @@
         </div>
         <footer id="footer">
           <button id="error"><span id="status"></span> 0 Errors</button>
-          <input type="text" id="xcor" placeholder="Width" value="1920">
-          <input type="text" id="ycor" placeholder="Height" value="1080">
+          <input type="text" id="xcor" placeholder="Width">
+          <input type="text" id="ycor" placeholder="Height">
         </footer>
         <script src="logic.js" async defer></script>
     </body>
