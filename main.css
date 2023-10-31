@@ -122,7 +122,7 @@ header {
 }
 
 #open:hover {
-  color: rgb(0, 200, 211);
+  color: #C77DFF;
   cursor: pointer;
 }
 
@@ -144,7 +144,7 @@ header {
 }
 
 #save:hover {
-  color: rgb(0, 200, 211);
+  color: #C77DFF;
   cursor: pointer;
 }
 
@@ -165,7 +165,7 @@ header {
 }
 
 #run:hover {
-  color: rgb(0, 200, 211);
+  color: #C77DFF;
   cursor: pointer;
 }
 
@@ -244,7 +244,7 @@ header {
 }
 
 #capture:hover {
-  color: rgb(0, 200, 211);
+  color: #C77DFF;
   cursor: pointer;
 }
 
@@ -295,7 +295,7 @@ header {
   background-color: #0f0f0f;
   bottom: 0px;
   width: 100%;
-  border-top: 1px solid rgb(50, 50, 50);
+  border-top: 1px solid rgb(63, 59, 65);
 }
 
 #status {
@@ -304,7 +304,7 @@ header {
   height: 10px;
   position: relative;
   left: 0;
-  background-color: rgb(131, 255, 162);
+  background-color: #C77DFF;
   border: none;
   border-radius: 25px;
 }
@@ -363,8 +363,8 @@ header {
   width: 50px;
   height: 25px;
   transform: translate(0%, -50%);
-  background-color: #141414;
-  border: none;
+  background-color: #170e1d;
+  border: 1px solid #8554ac;
   border-radius: 5px;
   outline: none;
   text-align: center;
@@ -379,8 +379,8 @@ header {
   width: 50px;
   height: 25px;
   transform: translate(0%, -50%);
-  background-color: #141414;
-  border: none;
+  background-color: #170e1d;
+  border: 1px solid #8554ac;
   border-radius: 5px;
   outline: none;
   text-align: center;
@@ -491,7 +491,7 @@ li:hover {
 }
 
 a {
-  color: rgb(0, 200, 211);
+  color: #C77DFF;
   text-decoration: none;
   font-size: 16pt;
 }

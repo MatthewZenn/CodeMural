@@ -35,7 +35,7 @@ document.getElementById("run").addEventListener('click', function() {
   document.getElementById("logger").value = "";
 
   document.getElementById("error").innerHTML = '<span id="status"></span> ' + errs.length + ' Errors';
-  document.getElementById("status").style.background = "#5AFF83";
+  document.getElementById("status").style.background = "#C77DFF";
 
   navigator.clipboard.writeText(document.getElementById("editor").value);
   window.addEventListener("error", errorlog);
@@ -57,10 +57,10 @@ document.getElementById("run").addEventListener('click', function() {
 document.getElementById("edit").addEventListener('click', function() {
     if (x == 0) {
         document.getElementById("textcontainer").style.display = "block";
-        document.getElementById("edit").style.backgroundColor = "rgb(0, 200, 211)";
+        document.getElementById("edit").style.backgroundColor = "#C77DFF";
         document.getElementById("edit").style.color = "white";
         document.getElementById("filename").style.color = "white";
-        document.getElementById("header").style.borderBottom = "1px solid rgb(0, 200, 211)";
+        document.getElementById("header").style.borderBottom = "1px solid #C77DFF";
         x = 1;
 
         document.getElementById("canvasarea").style.display = "none";
@@ -82,10 +82,10 @@ document.getElementById("edit").addEventListener('click', function() {
 document.getElementById("view").addEventListener('click', function() {
   if (x2 == 0) {
       document.getElementById("canvasarea").style.display = "block";
-      document.getElementById("view").style.backgroundColor = "rgb(0, 200, 211)";
+      document.getElementById("view").style.backgroundColor = "#C77DFF";
       document.getElementById("view").style.color = "white";
       document.getElementById("filename2").style.color = "white";
-      document.getElementById("header").style.borderBottom = "1px solid rgb(0, 200, 211)";
+      document.getElementById("header").style.borderBottom = "1px solid #C77DFF";
       x2 = 1;
 
       document.getElementById("textcontainer").style.display = "none";
