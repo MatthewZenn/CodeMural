@@ -24,6 +24,7 @@ document.getElementById("logo").addEventListener('click', () => {
 });
 
 var x = 0;
+var x2 = 0;
 var y = 0;
 var z = 0;
 var errs = [];
@@ -61,15 +62,46 @@ document.getElementById("edit").addEventListener('click', function() {
         document.getElementById("filename").style.color = "white";
         document.getElementById("header").style.borderBottom = "1px solid rgb(0, 200, 211)";
         x = 1;
+
+        document.getElementById("canvasarea").style.display = "none";
+        document.getElementById("view").style.backgroundColor = "#141414";
+        document.getElementById("view").style.color = "grey";
+        document.getElementById("filename2").style.color = "grey";
+        x2 = 0;
     }
     else {
         document.getElementById("textcontainer").style.display = "none";
-        document.getElementById("edit").style.backgroundColor = "transparent";
+        document.getElementById("edit").style.backgroundColor = "#141414";
         document.getElementById("edit").style.color = "grey";
         document.getElementById("filename").style.color = "grey";
         document.getElementById("header").style.borderBottom = "1px solid rgb(50, 50, 50)";
         x = 0;
     }
+});
+
+document.getElementById("view").addEventListener('click', function() {
+  if (x2 == 0) {
+      document.getElementById("canvasarea").style.display = "block";
+      document.getElementById("view").style.backgroundColor = "rgb(0, 200, 211)";
+      document.getElementById("view").style.color = "white";
+      document.getElementById("filename2").style.color = "white";
+      document.getElementById("header").style.borderBottom = "1px solid rgb(0, 200, 211)";
+      x2 = 1;
+
+      document.getElementById("textcontainer").style.display = "none";
+      document.getElementById("edit").style.backgroundColor = "#141414";
+      document.getElementById("edit").style.color = "grey";
+      document.getElementById("filename").style.color = "grey";
+      x = 0;
+  }
+  else {
+      document.getElementById("canvasarea").style.display = "none";
+      document.getElementById("view").style.backgroundColor = "#141414";
+      document.getElementById("view").style.color = "grey";
+      document.getElementById("filename2").style.color = "grey";
+      document.getElementById("header").style.borderBottom = "1px solid rgb(50, 50, 50)";
+      x2 = 0;
+  }
 });
 
 document.getElementById("error").addEventListener('click', function() {

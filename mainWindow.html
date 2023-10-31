@@ -15,7 +15,8 @@
             <button id="save">&#xE74E;</button>
             <button id="run">&#xE768;</button>
             <button id="capture">&#xEE71;</button>
-            <button id="edit">&#xE70F; <p id="filename">Untitled.js</p></button>
+            <button id="edit">&#xE70F;<p id="filename">Editor</p></button>
+            <button id="view">&#xE91B;<p id="filename2">Artboard</p></button>
             <span class="exit" onclick="window.close()">&#xE711;</span>
             <span class="min" id="min">&#xE738;</span>
         </header>
@@ -45,10 +46,18 @@
         <div id="log">
           <textarea name="errorlog" id="logger" cols="30" rows="10" readonly="true" contenteditable="false"></textarea>
         </div>
+        <div class="welcome">
+          <h2 class="contents">Resources</h2>
+          <li class="outlink"><a href="https://github.com/MatthewZenn/CodeMural">Github Page</a></li>
+          <li class="outlink"><a href="https://github.com/MatthewZenn/CodeMural/blob/main/README.md">README</a></li>
+          <li class="outlink"><a href="https://github.com/MatthewZenn/CodeMural">Documentation</a></li>
+          <li class="outlink"><a href="https://github.com/MatthewZenn/CodeMural/tree/main/Demos">Demo Scripts</a></li>
+        </div>
         <footer id="footer">
           <button id="error"><span id="status"></span> 0 Errors</button>
           <input type="text" id="xcor" placeholder="Width">
           <input type="text" id="ycor" placeholder="Height">
+          <p class="version">Version 0.5</p>
         </footer>
         <script src="logic.js" async defer></script>
         <script src="Scripts/Tools.js" async defer></script>
