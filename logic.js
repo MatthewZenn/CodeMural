@@ -1,8 +1,16 @@
+const { ipcRenderer } = require('electron');
 var canvas = 0;
 var ctx = 0;
 const realButton = document.getElementById("picture");
 const image = document.getElementById('image');
+const minimize = document.getElementById("min");
 const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+minimize.addEventListener("click", Minimize);
+
+function Minimize() {
+  ipcRenderer.send('minimize');
+}
 
 function createCanvas(xs, ys) {
   canvas = document.createElement('canvas');
